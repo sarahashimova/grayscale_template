@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: white;
+    opacity: 0.6;
+    height: 13%;
+    width: 100%;
+    position: fixed;
+}
+.header_container {
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_div a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.89);
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+}
+.nav_div nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav_div nav ul li {
+    margin-left: 30px;
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.89);
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+
+/* SECTION_1 */
+section.section1{
+    background-image: url("./images/bg-masthead.jpeg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.section1 h2{
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: grey;
+    font-family: 'Dongle', sans-serif;
+}
+section.section1 p{
+    width: 40%;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: grey;
+}
+section.section1 button{
+    margin-top: 40px;
+    height: 60px;
+    width: 200px;
+    background-color: #64a19d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* SECTION_2 */
+section.section2{
+    background-color: black;
+    height: 100vh;
+    position: relative;
+}
+.section2 .content_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    height: 70%;
+
+}
+.section2 .content_div h3{
+    font-size: 40px;
+}
+.section2 .content_div p{
+    width: 50%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.section2 div img{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: auto;
+    left: 20%;
+}
+
+
+/* SECTION3 */
+section.section3 {
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+.section3_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+.section3_container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section3_container .content div{
+    height: 150px;
+    border-left: 7px solid #64a19d; 
+    padding-left: 50px;
+}
+.section3_container .content div h4{
+    text-align: center;
+}
