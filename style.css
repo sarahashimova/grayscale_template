@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Poppins:wght@300;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 header{
     background-color: white;
@@ -30,6 +32,12 @@ header{
     list-style: none;
     display: flex;
 }
+.nav_div nav ul a{
+    text-decoration: none;
+}
+.nav_div nav ul li:hover {
+    color: rgb(239, 234, 234);
+}
 .nav_div nav ul li {
     margin-left: 30px;
     font-size: 18px;
@@ -51,16 +59,17 @@ section.section1{
     align-items: center;
 }
 section.section1 h2{
-    font-size: 60px;
+    font-size: 100px;
     letter-spacing: 4px;
-    color: grey;
+    color: rgba(199, 198, 198, 0.877);
     font-family: 'Dongle', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 section.section1 p{
     width: 40%;
     letter-spacing: 4px;
     font-size: 20px;
-    color: grey;
+    color: rgb(149, 144, 144);
 }
 section.section1 button{
     margin-top: 40px;
@@ -99,6 +108,10 @@ section.section2{
     width: 50%;
     margin-top: 30px;
     font-size: 20px;
+    color: rgb(170, 167, 167);
+}
+.section2 .content_div p a{
+    color: #64a19d;
 }
 .section2 div img{
     position: absolute;
@@ -111,14 +124,17 @@ section.section2{
 
 /* SECTION3 */
 section.section3 {
-    height: 100vh;
     background-color: #f8f9fa;
 }
 .section3_container{
     width: 80%;
     margin: auto;
     display: flex;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section3_container div img{
+    height: 450px;
 }
 .section3_container .content{
     display: flex;
@@ -131,6 +147,174 @@ section.section3 {
     border-left: 7px solid #64a19d; 
     padding-left: 50px;
 }
+.section3_container .content p{
+    color: grey;
+    font-size: 20px;
+}
 .section3_container .content div h4{
     text-align: center;
+    font-size: 27px;
+
 }
+
+
+
+/* SECTION 4 */
+section.section4 {
+    background-color: #f8f9fa;
+}
+section.section4 .container_div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-bottom: 80px;
+}
+section.section4 .container_div div{
+    width: 50%;
+}
+section.section4 .container_div div img{
+    width: 100%;
+    height: 100%;
+    
+}
+section.section4 .container_div div.content{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.section4 .container_div div.content p{
+    width: 70%;
+    color: rgb(136, 134, 134);
+    padding-top: 10px;
+}
+
+
+/* FOOTER */
+
+/* SECTION_5 */
+footer{
+    background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+footer section.section5{
+    height: 100%;
+}
+footer section .gradient_div {
+    background: linear-gradient(to bottom, rgba(4, 1, 1, 0), rgb(0, 0, 0));
+    height: 100%;
+   
+}
+footer section .gradient_div div.content{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer section .gradient_div div.content i{
+    font-size: 40px;
+    color: white;
+}
+footer section .gradient_div div.content h3{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 30px;
+    margin-top: 15px;
+}
+footer section .gradient_div div.content .button_div {
+    margin-top: 40px;
+
+}
+footer section .gradient_div div.content .button_div input {
+    height: 60px;
+    width: 500px;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+footer section .gradient_div div.content .button_div button{
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+    background-color: #64a19d;
+    margin-left: 20px;
+    color: white;
+}
+
+/* SECTION 6 */
+section.section6 {
+    height: 70vh;
+    background-color: black;
+}
+section.section6 .container{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+section.section6 .container .contact_divs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+section.section6 .container .contact_divs div{
+    height: 200px;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 5px solid #64a19d;
+}
+section.section6 .container .contact_divs div a, i{
+color: #64a19d;
+}
+section.section6 .container .contact_divs div.hr{
+    width: 60px;
+    height: 4px;
+    background-color: #64a19d;
+}
+section.section6 .container .social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+   
+}
+section.section6 .container .social_media div{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(32, 30, 30);
+    border-radius: 50%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.section6 .container .social_media div i{
+    color: rgba(128, 128, 128, 0.838);
+    font-size: 25px;
+}
+section.section6 .container .copyright{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    color: rgba(128, 128, 128, 0.838);
+    font-size: 20px;
+}
+
+
